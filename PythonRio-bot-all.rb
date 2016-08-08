@@ -72,7 +72,6 @@ Telegram::Bot::Client.run(token) do |bot|
 			when '/link@PythonRio_Bot'
 				bot.api.send_message(chat_id: message.chat.id, text: "Facebook = https://www.facebook.com/pythonrio
 
-
 					Twitter = https://www.twitter.com/pythonrio
 
 					Telegram = https://telegram.me/joinchat/AONs_ANlfCZRoXOX0QxEzA
