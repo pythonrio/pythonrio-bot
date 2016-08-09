@@ -1,4 +1,5 @@
-# pythonrio-bot
+# PythonRio-Bot
+
 Esse Readme é um pouco tutorial/como eu o criei.
 
 O bot que está em ruby, foi criado em um linux (Fedora), por isso haverá alguns comandos de um terminal linux.
@@ -58,27 +59,18 @@ Quarta Coisa a se fazer, Criar um arquivo ruby (Se quiser pode colar do nosso re
 
 A estrutura inicial é algo parecido como isso:
 
-require 'telegram/bot'
-
-token = 'seu TOKEN [Caso você não saiba seu token, o @BotFather tem um comando que mostra o token do seu bot /token]'
-
-Telegram::Bot::Client.run(token) do |bot|
-
-  bot.listen do |message|
-
-    case message.text
-
-      when '/dog'
-
-        bot.api.send_message(chat_id: message.chat.id, text:"woof")
-
-      when '/cat'
-
-        bot.api.send_message(chat_id: message.chat.id, text:"meow")
-
-    end
-  end
-end  
+    require 'telegram/bot'
+    token = 'seu TOKEN [Caso você não saiba seu token, o @BotFather tem um comando que mostra o token do seu bot /token]'
+    Telegram::Bot::Client.run(token) do |bot|
+      bot.listen do |message|
+        case message.text
+          when '/dog'
+            bot.api.send_message(chat_id: message.chat.id, text:"woof")
+          when '/cat'
+            bot.api.send_message(chat_id: message.chat.id, text:"meow")
+        end
+      end
+    end  
 
 O.B.S.: Se seu bot for adicionado em um grupo os seus comando são mudados, por isso você deve cobrir essa possibilidade. 
 Exemplo:
@@ -103,7 +95,7 @@ Ultima observação... Se for usar acentos não se esqueça que usamos o padrão
 ------------------------------------------------------------------------------------------------------------------------------
 Quinta Coisa a se fazer, rodar o seu arquivo ruby no terminal:
 
-$ruby arquivoRuby.rb
+$ ruby arquivoRuby.rb
 
 Agora o seu bot estará respondendo.
 
