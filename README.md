@@ -63,12 +63,19 @@ require 'telegram/bot'
 token = 'seu TOKEN [Caso você não saiba seu token, o @BotFather tem um comando que mostra o token do seu bot /token]'
 
 Telegram::Bot::Client.run(token) do |bot|
+
   bot.listen do |message|
+
     case message.text
+
       when '/dog'
+
         bot.api.send_message(chat_id: message.chat.id, text:"woof")
+
       when '/cat'
+
         bot.api.send_message(chat_id: message.chat.id, text:"meow")
+
     end
   end
 end  
@@ -87,11 +94,11 @@ Então para solucionar esse problema, dentro do case basta criar when que cubra 
 
 Salve o seu arquivo ruby.
 
-Ultima observação... Se for usar acentos não se esqueça que usamos o padrão UTF-8, e você pode utiliza-lo em seu documento ruby antes de qualquer código basta colocar
+Ultima observação... Se for usar acentos não se esqueça que usamos o padrão UTF-8, e você pode utiliza-lo em seu documento ruby antes de qualquer código basta colocar de forma comentada as seguintes três linhas abaixo:
 
-# encoding: UTF-8
-# coding: UTF-8
-# -*- coding: UTF-8 -*-
+ encoding: UTF-8
+ coding: UTF-8
+ -*- coding: UTF-8 -*-
 
 ------------------------------------------------------------------------------------------------------------------------------
 Quinta Coisa a se fazer, rodar o seu arquivo ruby no terminal:
