@@ -49,8 +49,8 @@ No nosso caso o bot, ele responde a partir de um comando.E suas respostas são m
 Parar dizemos quais são esses comandos, no telegram,em @BotFather digite o comando /setcommands
 Selecione o seu bot, e depois digite o comando e o que ele faz, exemplo:
 
-dog - diz woof
-cat - diz meow
+        dog - diz woof
+        cat - diz meow
 
 O.B.S.: cada vez que vc executa esse comando, ele apaga os comandos anteriores.
 
@@ -88,9 +88,9 @@ Salve o seu arquivo ruby.
 
 Ultima observação... Se for usar acentos não se esqueça que usamos o padrão UTF-8, e você pode utiliza-lo em seu documento ruby antes de qualquer código basta colocar de forma comentada as seguintes três linhas abaixo:
 
- encoding: UTF-8
- coding: UTF-8
- -*- coding: UTF-8 -*-
+        encoding: UTF-8
+        coding: UTF-8
+        -*- coding: UTF-8 -*-
 
 ------------------------------------------------------------------------------------------------------------------------------
 Quinta Coisa a se fazer, rodar o seu arquivo ruby no terminal:
