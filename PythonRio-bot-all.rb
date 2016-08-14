@@ -70,6 +70,6 @@ Telegram::Bot::Client.run(token) do |bot|
 		Telegram = https://telegram.me/joinchat/AONs_ANlfCZRoXOX0QxEzA
 		YouTube = https://www.youtube.com/channel/UCGl4xDZYUYGg4_aMah32yjQ
 		Clube do Livro = https://trello.com/invite/b/k75OyRBC/1e822b1c6b177f4cc501c39aa9a64e44/clube-do-livro-pythonrio")
-		end
 	end
+end
 end
