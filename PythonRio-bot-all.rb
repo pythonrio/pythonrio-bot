@@ -29,7 +29,7 @@ Telegram::Bot::Client.run(token) do |bot|
 		#forcapython")
 
 	when '/regras'
-		bot.api.send_message(chat_id: message.chat.id, text: "Não farás Pyratarias. Temos um clube do livro, confira em /link .
+		bot.api.send_message(chat_id: message.chat.id, text: "Não farás Pyratarias. Temos um clube do livro, confira em /link@PythonRio_Bot .
 		Não ofenderás o Coleguinha, Não aceitamos discriminação de qualquer tipo.
 		Não mandarás nudes, Somos pythonistas só nos excitamos com código.
 		Nao mandarás porno, mesmo que the internet is for porn
@@ -37,7 +37,7 @@ Telegram::Bot::Client.run(token) do |bot|
 		Falarás do PythonRio para os coleguinhas.")
 
 	when '/regras@PythonRio_Bot'
-		bot.api.send_message(chat_id: message.chat.id, text: "Não farás Pyratarias. Temos um clube do livro, confira em link.
+		bot.api.send_message(chat_id: message.chat.id, text: "Não farás Pyratarias. Temos um clube do livro, confira em /link@PythonRio_Bot.
 		Não ofenderás o Coleguinha, Não aceitamos discriminação de qualquer tipo.
 		Não mandarás nudes, Somos pythonistas só nos excitamos com código.
 		Nao mandarás porno, mesmo que the internet is for porn.
