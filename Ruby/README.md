@@ -126,4 +126,3 @@ https://core.telegram.org/bots/api
 https://core.telegram.org/bots/samples
 
 Caso não tenha dado certo ou precise de ajuda, ou queira modificar esse bot (precisa do token) mande uma mensagem para https://github.com/hi-hi-ray
-
