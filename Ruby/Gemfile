@@ -1,0 +1,7 @@
+# PythonRio-bot-all gem file
+source "https://rubygems.org"
+
+ruby '1.9.3'
+
+# gem "rails"
+gem 'telegram-bot-ruby', '~> 0.5.0.beta4'
