@@ -5,13 +5,22 @@
 require 'telegram/bot'
 token = '239201720:AAFA16ppUfKeuwtuwr2JjriHNRgDcEipdbw'
 
+def check_member_entrance(message, bot)
+	if message.new_chat_member
+		bot.api.send_message(chat_id: message.chat.id, text:"E aí, #{ message.new_chat_member.first_name }, tudo bem? Seja muito bem-vind@ ao grupo PythonRio. Fique à vontade para consultar as nossas \/regras e interagir com a galera!")
+	end
+end
+
 Telegram::Bot::Client.run(token) do |bot|
 	bot.listen do |message|
+
+	check_member_entrance(message, bot)
+
 	case message.text
 	when '/start'
 		bot.api.send_message(chat_id: message.chat.id, text: "Força Python!")
 	when '/start@PythonRio_Bot'
-		bot.api.send_message(chat_id: message.chat.id, text: "Força Python!")		
+		bot.api.send_message(chat_id: message.chat.id, text: "Força Python!")
 	when '/evento'
 		bot.api.send_message(chat_id: message.chat.id, text: "Prezados,
 		Dia 27 de Agosto de 2016 vai rolar XII Encontro da @pythonrio. Submeta sua proposta de palestra até dia 20/08/2016 pelo speakerfight http://speakerfight.com/events/xii-encontro-python-rio/
